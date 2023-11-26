@@ -1,0 +1,342 @@
+@font-face {
+    font-family: Kalam;
+    src: url(../fonts/hindi/Kalam/Kalam-Light.ttf);
+    font-weight: 300
+}
+@font-face {
+    font-family: Kalam;
+    src: url(../fonts/hindi/Kalam/Kalam-Regular.ttf);
+    font-weight: 400
+}
+@font-face {
+    font-family: Kalam;
+    src: url(../fonts/hindi/Kalam/Kalam-Bold.ttf);
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700
+}
+
+body {
+    font-family: Roboto;
+    margin: 0
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.inviting {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.inviting span {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.weddingCard {
+    text-align: center;
+    padding: 10px 10px;
+    border: 2px dashed #b1aeae;
+
+}
+
+.weddingCard h2 {
+    font-family: Kalam;
+    margin: 0;
+    font-size: 35px;
+    color: #fff;
+}
+
+.weddingCard h3 {
+    font-family: Kalam;
+    font-size: 70px;
+    margin: 0;
+    color: #f68a4e;
+}
+.wfont{
+    font-family: Kalam;
+}
+.weddingCard h4 {
+    margin: 35px 0 0;
+    font-weight: 400;
+    color: #c5c5c5;
+}
+
+.weddingCard p {
+    margin: 15px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255 255 255 / 70%);
+}
+
+.weddingCard {
+    text-align: center;
+    padding: 70px 10px 40px;
+    border: 2px dashed #b1aeae;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    height: 100%
+}
+
+.Zul_container {
+    background: #190061;
+    padding: 0 0 20px;
+}
+
+.inviting {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 0 20px;
+    color: rgb(255 255 255 / 70%);
+    padding: 0 10px;
+}
+
+.weddingCard::before {
+    background: url(../images/vector-1.png);
+    width: 150px;
+    height: 141px;
+    position: absolute;
+    content: "";
+    left: -18px;
+    top: -16px;
+    background-size: 150px;
+    z-index: -1;
+}
+
+.weddingCard::after {
+    background: url(../images/vector-4.png);
+    width: 128px;
+    height: 143px;
+    position: absolute;
+    content: "";
+    right: -18px;
+    top: auto;
+    background-size: 150px;
+    z-index: -1;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.row {
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+.row [class*="col-"]{
+    padding: 0 15px;
+}
+.row .col-6 {
+    width: 50%;
+}
+.row  .col-md-3{
+    width: 25%;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.countdown-container{
+    padding: 40px 15px;
+}
+.headingBox h2.wfont {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 37px;
+}
+.countdown .headingBox {
+    text-align: center;
+    margin: 0 0 40px;
+}
+.headingBox p {
+    margin: 0;
+    color: #e8e8e8;
+    font-size: 17px;
+}
+footer {
+    background: #0f003c;
+    text-align: center;
+    padding: 15px 0;
+}
+span.heart {
+    color: #ff544b;
+    animation: pulse 2s infinite;
+    display: inline-block;
+    margin: 0 6px;
+}
+.topFlower {
+    text-align: center;
+}
+.topFlower img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+footer p {
+    margin: 0;
+    color: rgb(255 255 255 / 70%);
+}
+.text-center{
+    text-align: center;
+}
+.venue {
+    padding: 50px 0;
+}
+.weddingCard p.fatherDetail {
+    margin: 0 0 15px;
+    font-size: 15px;
+    line-height: 26px;
+}
+.langTraslateBtn {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.langTraslateBtn a {
+    display: inline-block;
+    background: #f68a4e;
+    padding: 10px 14px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+h2.inthename {
+    font-size: 26px;
+    padding: 0 10px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.venueMap {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 0;
+}
+.weddingCard h5 {
+    color: #fff;
+    font-size: 25px;
+    margin: 0 0 15px;
+    font-weight: 400;
+    font-family: Kalam;
+}
+p.ronakafjai {
+    margin: 0 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
+    padding: 10px 0 20px;
+}
+.chashmebarah {
+    text-align: right;
+}
+.chashmebarah .headingBox h2.wfont {
+    text-align: right;
+    font-size: 20px;
+}
+.chashmebarah ul {
+    margin: 0;
+    padding: 0;
+}
+.chashmebarah ul li {
+    list-style: none;
+    color: rgb(255 255 255 / 70%);
+}
+.chashmebarah ul li span {
+    display: inline-block;
+    border-bottom: 1px solid;
+    margin-bottom: 8px;
+}
+.text-left{
+    text-align: left !important;
+}
+.contactDetails ul li svg {
+    fill: #fff;
+    width: 20px;
+    margin-right: 7px;
+}
+.contactDetails ul  li {
+    display: flex;
+    padding: 0 15px;
+}
+.contactDetails ul li a {
+    color: #fff;
+}
+.contactDetails ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media(max-width: 992px) {
+    .row .col-6 {
+        width: 100%;
+    }
+    .chashmebarah .text-right {
+        text-align: left !important;
+    }
+}

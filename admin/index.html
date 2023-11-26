@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vasim | Marriage</title>
+    <style>
+        .linkCreateForm input.form-control {
+            width: 100%;
+            padding: 8px 10px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .linkCreateForm {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: none;
+            margin-top: 10px;
+            border-radius: 4px;
+            color: #fff;
+            background: #007eff;
+        }
+
+        .linkCreateForm .form-group p {
+            margin: 0 0 7px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        p.inviteLink span {
+            padding: 10px 20px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: inline-block
+        }
+
+        .inviteLink span {
+            margin-top: 10px;
+        }
+
+        p.inviteLink span.copyText {
+            background: #00efe4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="linkCreateForm">
+        <div class="form-group">
+            <p>Name</p>
+            <input type="text" class="form-control name">
+        </div>
+        <button class="btn invite-btn" type="button">Create Link</button>
+        <p class="inviteLink"></p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Designed with <span class="heart">❤</span> By <span>Zulqarnain</span></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../assets/js/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('body').on('click', '.invite-btn', function () {
+                var name = $(this).parent('.linkCreateForm').find('.name').val();
+                name = $.trim(name)
+                name = name.replace(/\s+/g, '%20')
+                if (name) {
+                    $('.inviteLink').html(`<span class="link">${window.origin}/wedding/?invite=${name}</span><span class="copyText">Copy</span>`);
+                }
+            });
+            $('body').on('click', '.inviteLink span.copyText', function () {
+                var $this = $('.inviteLink span.link');
+                //                $this.select();
+                //                  $this.setSelectionRange(0, 99999); /* For mobile devices */
+
+                /* Copy the text inside the text field */
+                navigator.clipboard.writeText($this.text());
+
+            });
+        })
+    </script>
+</body>
+
+</html>
